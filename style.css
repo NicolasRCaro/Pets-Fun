@@ -4,11 +4,12 @@ html, body {
   background: #111;
   color: #fff;
   font-family: system-ui, Segoe UI, Roboto, Arial;
+  overflow: hidden;
 }
 
 #game {
   display: block;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: linear-gradient(180deg, #0b1221, #061022);
   touch-action: none;
@@ -19,15 +20,15 @@ html, body {
   left: 10px;
   top: 10px;
   z-index: 30;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0,0,0,0.35);
   backdrop-filter: blur(4px);
   padding: 8px;
   border-radius: 8px;
 }
 
 .btn {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.06);
   color: #fff;
   padding: 6px 10px;
   margin: 4px;
@@ -45,7 +46,7 @@ html, body {
   left: 50%;
   bottom: 18px;
   transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0,0,0,0.35);
   padding: 8px 12px;
   border-radius: 20px;
   font-size: 13px;
