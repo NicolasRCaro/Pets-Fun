@@ -1,33 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
-  <title>Juego para gatos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Láser para Gatos</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <canvas id="game"></canvas>
+  <canvas id="gameCanvas"></canvas>
 
-  <div class="overlay">
-    <div class="label">Objetivo: 
-      <select id="typeSelect" class="btn">
-        <option value="fish">Peces</option>
-        <option value="dot">Puntero láser</option>
-      </select>
-    </div>
-    <div style="margin-top:6px">
-      <button id="pauseBtn" class="btn">Pausar</button>
-      <button id="clearBtn" class="btn">Limpiar</button>
-    </div>
-    <div style="margin-top:6px" class="label">
-      Velocidad: 
-      <input id="speedRange" type="range" min="0.2" max="3" step="0.1" value="1" />
-    </div>
-  </div>
-
-  <div id="touchHint">
-    Toca la pantalla para crear un punto — los gatos adoran perseguir objetos en movimiento
+  <div class="controls">
+    <button onclick="changeSpeed(-1)">🐢 Más lento</button>
+    <button onclick="changeSpeed(1)">🐇 Más rápido</button>
   </div>
 
   <script src="script.js"></script>
